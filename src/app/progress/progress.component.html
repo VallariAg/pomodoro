@@ -1,0 +1,34 @@
+<div class="grid">
+  <div class="cup">
+    <div class="" id="water" [ngStyle]="{ height: hgt }"></div>
+  </div>
+  <div class="alert alert-success">{{ percent }}%</div>
+
+  <!-- <button [@fade]="isOn ? 'on' : 'off'" (click)="toggle()">yes</button> -->
+  <div class="status">
+    <div
+      [@work-break]="task == 'work' ? 'doing' : 'not-doing'"
+      (click)="startWork()"
+      class="card"
+    >
+      <div class="card-body">
+        Work
+      </div>
+    </div>
+    &nbsp; &nbsp;
+    <div
+      [@work-break]="task == 'break' ? 'doing' : 'not-doing'"
+      (click)="startBreak()"
+      class="card"
+    >
+      <div class="card-body">
+        Break
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-body">
+    <a class="btn btn-light" href="#">github.com/vallariag</a>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+.grid {
+  display: grid;
+  grid-row: 3fr 1fr;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3%;
+  grid-gap: 6%;
+  background: #262626;
+  padding-bottom: 14vh;
+}
+.timer {
+  height: 40vh;
+  align-self: center;
+  display: grid;
+  grid-row: auto auto;
+  align-items: end;
+  background-color: #fff;
+}
+.cup {
+  margin-top: 20%;
+  position: flex;
+
+  padding: 3%;
+
+  align-items: end;
+
+  height: 35vh;
+  width: 28vh;
+  border: 6px solid #fff;
+  border-radius: 15px;
+  border-top: 2px transparent;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.status {
+  display: flex;
+  flex-direction: row;
+}
+#water {
+  margin-bottom: 0%;
+
+  background-color: #81d4fa;
+  transition-duration: 2s;
+  transition-property: height;
+  transition-timing-function: linear;
+}
